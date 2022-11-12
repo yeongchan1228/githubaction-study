@@ -29,3 +29,8 @@ dependencies {
 tasks.named('test') {
     useJUnitPlatform()
 }
+
+// SNAPSHOT-plain.jar Create X
+jar {
+    enabled = false
+}
