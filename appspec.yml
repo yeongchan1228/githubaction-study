@@ -1,5 +1,5 @@
 version: 0.0
-0s: linux
+os: linux
 files:
   - source: /
     destination: /home/ubuntu/github_action
