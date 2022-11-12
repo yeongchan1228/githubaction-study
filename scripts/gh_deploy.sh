@@ -1,6 +1,6 @@
 #!/bin/bash
 PROJECT_NAME="github_action"
-JAR_PATH="/home/ubuntu/github_action/build/libs/*.jar"
+JAR_PATH="/home/ubuntu/github_action/build/libs/*-SNAPSHOT.jar"
 DEPLOY_PATH=/home/ubuntu/$PROJECT_NAME/
 DEPLOY_LOG_PATH="/home/ubuntu/$PROJECT_NAME/deploy.log" # Deploy Log 파일
 DEPLOY_ERR_LOG_PATH="/home/ubuntu/$PROJECT_NAME/deploy_err.log" # Deploy Error Log 파일
