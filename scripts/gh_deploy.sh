@@ -8,7 +8,7 @@ APPLICATION_LOG_PATH="/home/ubuntu/$PROJECT_NAME/application.log" # Application 
 BUILD_JAR=$(ls $JAR_PATH)
 JAR_NAME=$(basename $BUILD_JAR)
 
-echo "===== 배포 시작 : $(data + +%c) =====" >> $DEPLOY_LOG_PATH
+echo "===== 배포 시작 : $(date +%c) =====" >> $DEPLOY_LOG_PATH
 
 echo "> build 파일명: $JAR_NAME" >> $DEPLOY_LOG_PATH
 echo "> build 파일 복사" >> %DEPLOY_LOG_PATH
@@ -34,4 +34,4 @@ nohup java -jar -Dspring.profiles.active=prod $DEPLOY_JAR --server.port=8081 >> 
 
 sleep 3
 
-echo "> 배포 종료 : $(data +%c)" >> $DEPLOY_LOG_PATH
+echo "> 배포 종료 : $(date +%c)" >> $DEPLOY_LOG_PATH
